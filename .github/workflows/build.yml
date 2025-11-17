@@ -34,7 +34,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Get NuGet Packages
-      run: dotnet restore
+      run: dotnet add package FosterFramework
 
     - name: Build
       env:
