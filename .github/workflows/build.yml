@@ -34,7 +34,10 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Get NuGet Packages
-      run: dotnet add package FosterFramework
+      run: |
+        dotnet add package FosterFramework
+        dotnet add package SharpGLTF.Runtime
+        dotnet add package Sledge.Formats.Map
 
     - name: Build
       env:
